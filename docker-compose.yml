@@ -1,0 +1,10 @@
+    version: '3'
+    services:
+      nginx:
+        image: nginx:latest
+        ports:
+          - "80:80"
+        volumes:
+          - ./hosts:/etc/nginx/sites-available
+          - ./www:/var/www
+          - ./nginx_logs:/var/log/nginx
