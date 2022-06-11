@@ -6,5 +6,5 @@
           - "80:80"
         volumes:
           - ./hosts:/etc/nginx/sites-available
-          - ./www:/var/www
+          - ./www:/usr/share/nginx/html
           - ./nginx_logs:/var/log/nginx
